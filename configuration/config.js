@@ -15,7 +15,7 @@ mongoose
   )
   // eslint-disable-next-line no-console
   .then(() => {
-    console.log('\nMogoDb Connected Successfuly at MongoAtlas with Database Name blah blah DataBase\n');
+    console.log('\nMogoDb Connected Successfuly at MongoAtlas with Database Name AngularMaterial DataBase\n');
 
     // Iterate over dependencies in the .then block
     for (const dependency in Package.dependencies) {
