@@ -5,11 +5,11 @@ const SendDropDownVariables = async (req,res) =>{
         const MyVariabels = {
             data: {
                variable1:[
-                {id:1,variable:"option1"},
-                {id:2,variable:"option2"},
-                {id:3,variable:"option3"},
-                {id:4,variable:"option4"},
-                {id:5,variable:"option5"},
+                {id:1,variable:"Preference Picker"},
+                {id:2,variable:"Choice Chamber"},
+                {id:3,variable:"Flavorful Selections"},
+                {id:4,variable:"Decision Delight"},
+                {id:5,variable:"Item Explorer"},
                ] ,
               variable2:[
                 {id:1,variable:"option1"},
