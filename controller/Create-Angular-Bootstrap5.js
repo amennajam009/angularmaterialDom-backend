@@ -1,4 +1,4 @@
-const {SelectedVariable} = require('../modal/Create-Angular-Bootstrap5')
+const SelectedVariable = require('../modal/Create-Angular-Bootstrap5')
 
 
 const SaveSelectedVariable = async (req,res) =>{
