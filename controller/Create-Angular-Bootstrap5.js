@@ -1,4 +1,4 @@
-const SelectedVariable = require('../modal/Create-Angular-Bootstrap5')
+const {SelectedVariable , testingComponentVariable } = require('../modal/Create-Angular-Bootstrap5')
 
 
 const SaveSelectedVariable = async (req,res) =>{
@@ -24,9 +24,34 @@ const SaveSelectedVariable = async (req,res) =>{
     }
 }
 
+const SaveTestingComponent = async (req,res) =>{
+    try {
+        const {variable1,variable2,variable3,variable4,
+            variable5,variable6} = req.body;
+
+        const MappingData = new testingComponentVariable({
+            variable1,variable2,variable3,variable4,
+            variable5,variable6
+        }) ;
+        const DataToSave = await MappingData.save()
+        res.json({
+            message:"Api Works",
+            data:true,
+            result:DataToSave
+        })   
+    } catch (error) {
+        res.json({
+            message:error.message,
+            data:false,
+            result:null
+        })
+    }
+}
+
 
 
 
 module.exports = {
-    SaveSelectedVariable
+    SaveSelectedVariable,
+    SaveTestingComponent
 }
