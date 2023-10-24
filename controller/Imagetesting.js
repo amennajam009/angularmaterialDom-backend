@@ -9,7 +9,9 @@ const MytestingApi = async (req,res) =>{
         const MappingData = new testingImage({
             name , Class,
             imageDetails: {
-                imageUrl: `assets/cards/${name}/${req.file}`
+                imageUrl: `assets/cards/${name}/${req.file.filename}`,
+                imageName: req.file.originalname,
+                imageMimeType: req.file.mimetype
             }
         })
         const DataToSave = await MappingData.save()
