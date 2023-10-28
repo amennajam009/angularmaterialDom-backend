@@ -2,7 +2,6 @@
 const mongoose = require('mongoose');
 
 
-// FourCards
 
 const testingImage = new mongoose.Schema({
     name : { type:String, required:true },
@@ -10,6 +9,8 @@ const testingImage = new mongoose.Schema({
     imageDetails: [
         {
             imageUrl: { type: String  },
+            imageName: { type: String },
+            imageMimeType: { type: String },
         }
     ]
     
