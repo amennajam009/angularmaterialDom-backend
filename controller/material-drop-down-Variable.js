@@ -38,35 +38,7 @@ const materialDropDownVariable = async (req,res) =>{
              {id:3,variable:"Decision Destination"},
              {id:4,variable:"Choose & Cherish"},
              {id:5,variable:"Options Overlook"},
-           ],
-           variable6:[
-             {id:1,variable:"Opt for Opportunities"},
-             {id:2,variable:"Choices Unlimited"},
-             {id:3,variable:"Variety Voyage"},
-             {id:4,variable:"Explore and Select"},
-             {id:5,variable:"Preferences Palette"},
-           ],
-           variable7:[
-             {id:1,variable:"Flavor Finder"},
-             {id:2,variable:"Select a Value"},
-             {id:3,variable:"Preference"},
-             {id:4,variable:"Decision Maker"},
-             {id:5,variable:"Options Menu"},
-           ],
-           variable8:[
-             {id:1,variable:"Options Menu"},
-             {id:2,variable:"Decision Maker"},
-             {id:3,variable:"Preference"},
-             {id:4,variable:"Select a Value"},
-             {id:5,variable:"Flavor Finder"},
-           ],
-           variable9:[
-             {id:1,variable:"Flavor Selector"},
-             {id:2,variable:"Decision Dilemma"},
-             {id:3,variable:"Choice Chronicle"},
-             {id:4,variable:"Preference Playground"},
-             {id:5,variable:"Options Odyssey"},
-           ],     
+           ],    
          }
       }  
       res.json({
