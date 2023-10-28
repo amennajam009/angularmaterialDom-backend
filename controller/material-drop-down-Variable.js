@@ -42,8 +42,6 @@ const materialDropDownVariable = async (req,res) =>{
          }
       }  
       res.json({
-        message:'Api works',
-        data:true,
         result:materialVariables
       })    
     } catch (error) {
@@ -54,6 +52,7 @@ const materialDropDownVariable = async (req,res) =>{
         })
     }
 } 
+
 
 
 module.exports={
