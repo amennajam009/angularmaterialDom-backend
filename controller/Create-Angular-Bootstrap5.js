@@ -52,7 +52,7 @@ const SaveTestingComponent = async (req,res) =>{
 
 const getSelectedVariable = async (req,res) =>{
     try {
-        const getData = await testingComponentVariable.find()
+        const getData = await SelectedVariable.find()
         res.json({
             data:getData
         })
