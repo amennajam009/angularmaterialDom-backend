@@ -5,6 +5,7 @@ const SaveSelectedVariable = async (req,res) =>{
     try {
         const {variable1,variable2,variable3,variable4,
               variable5,variable6,variable7,variable8,variable9} = req.body;
+              
         const MappingData = new SelectedVariable({
             variable1,variable2,variable3,variable4,
               variable5,variable6,variable7,variable8,variable9
@@ -30,7 +31,7 @@ const SaveTestingComponent = async (req,res) =>{
             variable5,variable6} = req.body;
 
         const MappingData = new testingComponentVariable({
-            variable1,variable2,variable3,variable4,
+             variable1,variable2,variable3,variable4,
             variable5,variable6
         }) ;
         const DataToSave = await MappingData.save()
@@ -49,9 +50,23 @@ const SaveTestingComponent = async (req,res) =>{
 }
 
 
+const getSelectedVariable = async (req,res) =>{
+    try {
+        const getData = await testingComponentVariable.find()
+        res.json({
+            data:getData
+        })
+    } catch (error) {
+        res.json({
+            data:null
+        })
+    }
+}
+
 
 
 module.exports = {
     SaveSelectedVariable,
-    SaveTestingComponent
+    SaveTestingComponent,
+    getSelectedVariable
 }
