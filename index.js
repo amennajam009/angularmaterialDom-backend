@@ -37,7 +37,7 @@ const SendVariableData = require ('./Route/dropDown-Variable-route')
 const sendAngularMaterialData =  require('./Route/material-dropDown-variable')
 const saveVariableData = require ('./Route/Create-Angular-Bootstrap5')
 const ImageTestingData = require('./Route/Imagetesting')
-
+const api_Material = require('./Route/api-material')
 
 
 //Using Routes
@@ -45,6 +45,7 @@ app.use('/SendVariableData' , SendVariableData);
 app.use('/sendAngularMaterialData', sendAngularMaterialData)
 app.use('/saveVariableData' , saveVariableData)
 app.use('/ImageTestingData' , ImageTestingData)
+app.use('/api_material',api_Material)
 
 
 
