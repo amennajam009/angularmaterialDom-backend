@@ -17,4 +17,4 @@ const apiCrudMaterial = new mongoose.Schema({
 
 
 
- module.exports = mongoose.model('aoiCrudMaterial', apiCrudMaterial); 
+ module.exports = mongoose.model('apiCrudMaterial', apiCrudMaterial); 
