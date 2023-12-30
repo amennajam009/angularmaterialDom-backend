@@ -1,6 +1,6 @@
 const apiCrudMaterial = require('../modal/api-material')
 
-
+// Create User
 const apiCrudOfMaterial = async (req, res) => {
     try {
       const { first_name, last_name, status_id } = req.body;
@@ -42,6 +42,24 @@ const apiCrudOfMaterial = async (req, res) => {
   };
 
 
+  //get User
+
+   const getUserData =async (req,res) =>{
+    try {
+        const getUserData = await apiCrudMaterial.find()
+        res.json({
+            data:getUserData,
+            result:true
+        })
+    } catch (error) {
+        res.json({
+            data:null,
+            result:false
+        })
+    }
+  }
+
 module.exports = {
-    apiCrudOfMaterial
+    apiCrudOfMaterial,
+    getUserData
 }
