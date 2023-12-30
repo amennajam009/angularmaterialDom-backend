@@ -9,7 +9,7 @@ const apiCrudMaterial = new mongoose.Schema({
         {
             id: {type:Number},
             status_name: {type:String},
-            status_color: {type:String}
+            status_color: {type:String},
         }
     ]
 },
